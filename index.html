@@ -7,43 +7,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/slideshow.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/dotnav.min.css">
+    
     
 </head>
 <body>
 
 <div class="container">
-    <nav class="uk-navbar">
-        <div class="uk-navbar-flip">
+    <nav class="uk-navbar" style="text-align: center;">
+        <div style="display: inline-block;">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Aircraft</a></li>
-                <li><a href="">Testimonials</a></li>
+                <li><a href="">Investors</a></li>
+                <li><a href="">Log In</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="">Login</a></li>
                 <!-- <li class="uk-parent"><a href="">Services</a></li> -->
             </ul>
         </div>
+        <br />
+        <img src="assets/images/Logotipo.png">
     </nav>
     
 
-    <div class="cover-image">
-        
+    <div class="banner-slider">
+        <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
+            <ul class="uk-slideshow uk-overlay-active uk-slideshow-fullscreen" data-uk-slideshow>
+                <li style="height:100vh">
+                    <img src="assets/images/banner3.jpg" width="800" height="400">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade overlay-inside-content uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div class="overlay-inside-content">
+                            <h1>WELCOME TO KEY AVIATION: AIRCRAFT EXCELLENCE SERVICES</h1>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/banner3.jpg" width="800" height="400">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade overlay-inside-content uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div class="overlay-inside-content">
+                            <h1> SAFE AND HIGH PERFORMANCE INVESTMENTS IN RELATIVELY SHORT TERMS</h1>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/banner3.jpg" width="800" height="400">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade overlay-inside-content uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div class="overlay-inside-content">
+                            <h1>OPERATING EFFICIENCY, ADVANCED AVIONIC AND IMPRESSIVE INTERIORS</h1>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/banner3.jpg" width="800" height="400">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade overlay-inside-content uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div class="overlay-inside-content">
+                            <h1>KEY AVIATION OPENS THE POSSIBILITIES OF BUYING, MAINTENANCE, CONVERSION AND LEASING AN AIRCRAFT ACCORDING TO YOUR SPECIFIC PREFERENCE AND DESIRES</h1>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            <!-- <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a> -->
+            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                <li data-uk-slideshow-item="0"><a href=""></a></li>
+                <li data-uk-slideshow-item="1"><a href=""></a></li>
+                <li data-uk-slideshow-item="2"><a href=""></a></li>
+                <li data-uk-slideshow-item="3"><a href=""></a></li>
+            </ul>
+        </div>
     </div>
 
-    <div style="margin-top:-5px; position:relative;">
-        <img src="assets/images/banner-dk.jpg">
-        <img class="banner-logo" src="assets/images/Logotipo.png">
+
+    <div style="position:relative; height:207px;">
+
+        <!-- <img class="banner-logo" src="assets/images/Logotipo.png">
+         -->
+
+         <div class="services">
+             <h4>SERVICES</h4>
+             <ul>
+                 <li><i class="fa fa-wrench"></i>MAINTAINANCE</li>
+                 <li><i class="fa fa-star"></i>FOR SALE</li>
+                 <br />
+                 <li><i class="fa fa-refresh"></i>CONVERSION</li>
+                 <li><i class="fa fa-dollar"></i>LEASING</li>
+             </ul>
+         </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="container about-us">
+        <h2>About Us</h2>
+        <p>"Nos especializamos en la compra de aviones para restaurarlos actualizarlos y posteriormente venderlos "</p>
     </div>
 
 </div>
         
 
 
-    
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/slideshow.js"></script>
+
 </body>
 </html>
