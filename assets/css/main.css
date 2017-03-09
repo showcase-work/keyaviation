@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6, html{
 }
 
 
+*{
+    box-sizing: border-box;
+}
+
 
 nav{
     position: absolute;
@@ -69,7 +73,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     margin:0px;
 }
 
-.uk-dotnav{
+.banner-slider .uk-dotnav{
     z-index: 1000;
     position:absolute !important;
     top:64%;
@@ -141,14 +145,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     color:black;
 }
 
-.about-us{
-    padding:20px;
-}
 
-.about-us h2{
-    color:black;
-    font-weight: bolder;
-}
 
 .myheight{
     height:100px;
@@ -171,19 +168,19 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
 
 }*/
 
-.uk-slideshow{
+.banner-slider .uk-slideshow{
     position:absolute !important;
     top:0px;
     left:0px;
     width:100%;
 }
 
-.uk-slidenav-position{
+.banner-slider .uk-slidenav-position{
     position:relative;
     min-height: 100vh;
 }
 
-.uk-overlay-background{
+.banner-slider .uk-overlay-background{
     background: transparent !important;
 }
 
@@ -196,7 +193,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     opacity: 1 !important;
 }
 
-.uk-slideshow>.uk-active{
+.banner-slider .uk-slideshow>.uk-active{
     position:relative;
 }
 
@@ -204,21 +201,235 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     position: relative;
 }
 
-.overlay-inside-content{
+.banner-slider .overlay-inside-content{
     margin-top: 5%;
 }
 
-.overlay-inside-content p{
+.banner-slider .overlay-inside-content p{
     font-style: italic;
     font-weight: lighter;
     max-width:610px;
 }
 
-.overlay-inside-content h1{
+.banner-slider .overlay-inside-content h1{
     font-weight: bolder;
     margin-bottom:0px;
 }
 
-.overlay-inside-content.blue p, .overlay-inside-content.blue h1{
+.banner-slider .overlay-inside-content.blue p, .overlay-inside-content.blue h1{
     color:#1e2534;
+}
+
+.about-us .heading-block{
+    background-color: #05192e;
+    color:white;
+    padding:30px;
+}
+
+.about-us .heading-block h1{
+    color:white;
+    font-weight: 800;
+    margin:0px;
+}
+
+.about-us .left-block{
+    width:50%;
+    padding:20px;
+    display: inline-block;
+    vertical-align: top;
+    font-style: italic;
+    position: relative;
+}
+
+.about-us .right-block{
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+    padding:20px;
+}
+
+.about-us p{
+    margin-bottom: 14px;
+}
+
+.heading.button-style{
+    background-color: #ab9364;
+    display: inline-block;
+    padding: 4px 20PX;
+    color:white;
+    border-radius: 8px;
+    font-style: normal;
+    font-size: 20px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.about-us .left-block .left-content{
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    padding:10px;
+    border-right:2px solid black;
+}
+
+.about-us .left-block .right-content{
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    padding:10px;
+}
+
+.about-us .left-block .left-content li{
+    display: block;
+    text-align: left;
+}
+
+.background-round{
+    position: absolute;
+    width:100%;
+    top:50%;
+    margin-top: -45%;
+    left:0px;
+    padding:50px;
+    z-index:-1;
+}
+
+.investors .heading-block{
+    background-image: url('../images/bg-investors.png');
+    background-position: center center;
+    background-size: cover;
+    color:white;
+    padding:30px;
+}
+
+.investors .heading-block h1{
+    margin:0px;
+    padding:0px;
+    font-weight: bolder;
+    color:white;
+}
+
+.investors .left-block{
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    padding:5%;
+    text-align: left;
+}
+
+.investors .left-block p{
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.investors .right-block{
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    padding:5%;
+}
+
+.investors .right-block .investor-img{
+    border-radius: 100%;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    max-width: 260px;
+    background: url("../images/investor.png");
+    background-size: cover;
+    background-position: center center;
+    height:260px;
+    width:260px;
+    display: inline-block;
+}
+
+.investors .right-block h2{
+    color:#3c4c5c;
+    font-style: italic;
+}
+
+.contact-us .heading-block{
+    padding:30px;
+    background-color: #05192e;
+}
+.contact-us .heading-block h1{
+    color:white;
+    font-weight: bolder;
+    margin:0px;
+    padding: 0px;
+}
+
+.contact-table .right-side{
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    padding:5%;
+    text-align: left;
+}
+
+.contact-table .left-side{
+    display: inline-block;
+    width:50%;
+    vertical-align: top;
+    padding:5%;
+    text-align: left;
+    border-right: 1px solid #ab9364;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.contact-table{
+    border:1px solid #ab9364;
+}
+
+.contact-table i{
+    margin-right: 5px;
+}
+
+.contact-table .right-side label{
+    display: block;
+    font-weight: bolder;
+}
+
+.contact-table .right-side input, .contact-table .right-side textarea{
+    border:none;
+    border-bottom: 1px solid #ab9364;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 800px) {
+  .about-us .left-block {
+    width:100%;
+  }
+
+  .about-us .right-block{
+    width:100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .background-round{
+    margin-top: -52%;
+  }
+
+  .investors .left-block{
+    width:100%;
+  }
+
+  .investors .right-block{
+    width:100%;
+    padding-top:0px;
+  }
+
+  .contact-table .left-side{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ab9364;
+  }
+
+  .contact-table .right-side{
+    width:100%;
+  }
 }
