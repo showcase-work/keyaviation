@@ -278,6 +278,10 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     padding:10px;
 }
 
+.about-us .left-block .left-content ul{
+    padding-left: 0px;
+}
+
 .about-us .left-block .left-content li{
     display: block;
     text-align: left;
