@@ -37,6 +37,11 @@ nav{
     top:10px;
 }
 
+body, html{
+    overflow-x: hidden !important
+    width:100% !important;
+}
+
 
 
 /*uikit changes*/
