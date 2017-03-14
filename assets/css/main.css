@@ -579,7 +579,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
 
     .services-block .content .blocks{
         margin-right:0px !important;
-        width:100%;
+        width:100% !important;
     }
 }
 
