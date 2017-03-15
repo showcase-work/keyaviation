@@ -34,7 +34,7 @@ nav{
     position: absolute;
     width:100%;
     background-color: transparent !important;
-    top:10px;
+    top:35px;
 }
 
 body, html{
@@ -265,7 +265,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     margin-bottom: 14px;
 }
 
-.heading.button-style{
+.button-style{
     background-color: #ab9364;
     display: inline-block;
     padding: 1px 20PX;
@@ -276,6 +276,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     font-size: 16px;
     box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
     border-radius: 0px;
+    border:none;
 }
 
 .about-us .left-block .left-content{
@@ -333,6 +334,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     vertical-align: top;
     padding:5%;
     text-align: left;
+    padding-left: 0px;
 }
 
 .investors .left-block p{
@@ -345,6 +347,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     width:50%;
     vertical-align: top;
     padding:5%;
+    padding-right: 0px;
 }
 
 .investors .right-block .investor-img{
@@ -364,10 +367,18 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     font-style: italic;
 }
 
+.investors .container{
+    padding-left:10%;
+    padding-right: 10%;
+}
+
 .contact-us .heading-block{
     padding:30px;
     background-color: #05192e;
+    position: relative;
 }
+
+
 .contact-us .heading-block h1{
     color:white;
     font-weight: bolder;
@@ -512,76 +523,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
 }
 
 
-@media (max-width: 800px) {
-    .about-us .left-block {
-        width:100%;
-    }
 
-    .about-us .right-block{
-        width:100%;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-    }
-
-    .background-round{
-        margin-top: -52%;
-    }
-
-    .investors .left-block{
-        width:100%;
-    }
-
-    .investors .right-block{
-        width:100%;
-        padding-top:0px;
-    }
-
-    .contact-table .left-side{
-        width:100%;
-        border:none;
-        border-bottom:1px solid #ab9364;
-    }
-
-    .contact-table .right-side{
-        width:100%;
-    }
-
-    #whoIsKeyAviation .main-content .div1{
-        width:100%;
-   }
-
-    #whoIsKeyAviation .main-content .div2{
-        width:100%;
-    }
-
-    #whoIsKeyAviation .main-content .div3{
-        width:100%;
-    }
-
-    #whoIsKeyAviation .main-content{
-        display: block;
-    }
-
-    #whoIsKeyAviation .main-content .div1 p{
-        display: inline-block;
-        position: initial;
-        width:100%;
-    }
-
-    #whoIsKeyAviation .main-content .div1{
-        background-image: none;
-    }
-
-    #whoIsKeyAviation .main-content .div1 img{
-        display: none;
-    }
-
-    .services-block .content .blocks{
-        margin-right:0px !important;
-        width:100% !important;
-    }
-}
 
 p{
     font-size: 12px;
@@ -666,3 +608,324 @@ footer{
     display: inline-block;
     float:none;
 }
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.social-icons{
+    position:absolute;
+    top:5px;
+    right:0px;
+    margin-right: 10px;
+    z-index:100000;
+}
+
+.social-icons li{
+    display: inline-block;
+    z-index: 10000;
+    color:white;
+}
+
+.social-icons li a{
+    color:white;
+}
+
+.social-icons li i{
+    padding-top: 3px;
+    font-size: 13px;
+    margin:3px;
+    border-radius: 5px;
+    width:20px;
+    height:20px;
+    text-align: center;
+}
+
+i.fa-facebook{
+    background-color:#2b5381;
+}
+
+i.fa-twitter{
+    background-color:#249ebd;
+}
+
+i.fa-youtube{
+    background-color:#f4363a;
+}
+
+i.fa-instagram{
+    background-color:#2b5381;
+}
+
+i.fa-linkedin{
+    background-color:#0e6083;
+}
+
+.blocks i{
+    background-color:#ffe0a7;
+    color: #162324;
+    text-align: center;
+    width:17px;
+    height:17px;
+    font-size: 13px;
+    border-radius: 100%;
+    padding-top: 2px;
+    margin-right: 8px;
+    margin-left: -5px;
+    display: inline-block;
+}
+
+.cargo-info .upper-section{
+    background-image: url('../images/cargobg2.png');
+    background-size: cover;
+    background-position: center center;
+    height:400px;
+}
+
+.cargo-info .upper-section i{
+    margin-right: 10px;
+}
+
+.cargo-info .upper-section h1{
+    color:white;
+    font-weight: bolder;
+    margin-left: 10px;
+    font-size: 28px;
+}
+
+.cargo-info .upper-section .overlay{
+    width:100%;
+    height:100%;
+    padding:40px;
+    background:rgba(0,0,0,0.4);
+}
+
+.cargo-info .lower-section{
+    display: flex;
+    padding-left:5%;
+    padding-right:5%;
+    background-color: #162324;
+    color:#fff;
+    text-align: left;
+    justify-content: center;
+    align-items: center;    
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cargo-info .lower-section .div2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cargo-info .lower-section h4{
+    font-style: italic;
+}
+
+.cargo-info .lower-section ul {
+    padding:0px;
+}
+
+.cargo-info .lower-section ul li{
+    display: block;
+}
+
+.boeing2-content{
+    padding:40px 5%;
+    display: flex;
+    justify-content: center;
+    background:#2a373c;
+    color:#fff;
+    text-align: left;
+    font-style: italic;
+}
+
+.boeing2-content.content2{
+    background-color: #162324;
+}
+
+.boeing2-content .left-block, .boeing2-content .right-block{
+    display: inline-block;
+    padding:20px;
+    vertical-align: top;
+}
+
+.boeing2-content .left-block{
+    margin-right: 20px;
+}
+
+.boeing2-content .left-block .center{
+    text-align: left;
+    padding:40px;
+}
+
+.boeing2-content .left-block .center .button-style{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+ul{
+    padding:0px;
+}
+
+.boeing2-content.content2 ul li{
+    display: block;
+}
+
+#detailsOfBoeing table{
+    background-color: rgb(17, 91, 131);
+    color:white;
+    display: inline-block;
+}
+
+#detailsOfBoeing table td{
+    padding:10px;
+    border:1px solid white;
+    font-size: 13px;
+}
+
+#detailsOfBoeing{
+    text-align: center;
+}
+
+
+#detailsOfBoeing .main-container{
+    padding:30px;
+}
+
+#detailsOfBoeing .main-container h1{
+    padding-bottom:20px;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.boeing .overlay-inside-content{
+    text-align: left;
+    padding:20px;
+    padding-left: 5%;
+}
+
+
+.boeing .overlay-inside-content h1{
+    font-size: 26px;
+    margin:0px;
+    font-style: italic;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.boeing .overlay-inside-content p{
+    font-size: 18px;
+    margin:0px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+@media (max-width: 800px) {
+    .about-us .left-block {
+        width:100%;
+    }
+
+    .about-us .right-block{
+        width:100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .background-round{
+        margin-top: -52%;
+    }
+
+    .investors .left-block{
+        width:100%;
+    }
+
+    .investors .right-block{
+        width:100%;
+        padding-top:0px;
+    }
+
+    .contact-table .left-side{
+        width:100%;
+        border:none;
+        border-bottom:1px solid #ab9364;
+    }
+
+    .contact-table .right-side{
+        width:100%;
+    }
+
+    #whoIsKeyAviation .main-content .div1{
+        width:100%;
+   }
+
+    #whoIsKeyAviation .main-content .div2{
+        width:100%;
+    }
+
+    #whoIsKeyAviation .main-content .div3{
+        width:100%;
+    }
+
+    #whoIsKeyAviation .main-content{
+        display: block;
+    }
+
+    #whoIsKeyAviation .main-content .div1 p{
+        display: inline-block;
+        position: initial;
+        width:100%;
+    }
+
+    #whoIsKeyAviation .main-content .div1{
+        background-image: none;
+    }
+
+    #whoIsKeyAviation .main-content .div1 img{
+        display: none;
+    }
+
+    .services-block .content .blocks{
+        margin-right:0px !important;
+        width:100% !important;
+    }
+
+    .cargo-info .lower-section{
+        display: block;
+        text-align: center;
+    }
+
+
+
+    .cargo-info .lower-section .div1,.cargo-info .lower-section .div2,.cargo-info .lower-section .div3{
+        margin:0px;
+        padding: 20px 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .boeing2-content{
+        display: block;
+        text-align: left;
+    }
+
+    .boeing2-content .left-block, .boeing2-content .right-block{
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        margin:0px;
+    }
+
+    .boeing2-content .left-block .center{
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .projects-container .uk-slideshow , .projects-container .uk-slideshow li{
+        min-height:300px !important;
+    }
+}
+
