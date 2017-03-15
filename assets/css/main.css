@@ -895,6 +895,7 @@ ul{
         display: inline-block;
         position: initial;
         width:100%;
+        padding:20px !important;
     }
 
     #whoIsKeyAviation .main-content .div1{
@@ -943,6 +944,10 @@ ul{
 
     .projects-container .uk-slideshow , .projects-container .uk-slideshow li{
         min-height:300px !important;
+    }
+
+    #whoIsKeyAviation .main-content p{
+
     }
 }
 
