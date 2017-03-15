@@ -419,16 +419,20 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     margin-right: 5px;
 }
 
-.contact-table .right-side label{
+label{
     display: block;
     font-weight: bolder;
 }
 
-.contact-table .right-side input, .contact-table .right-side textarea{
+input, textarea{
     border:none;
     border-bottom: 1px solid #ab9364;
     width:100%;
     margin-bottom: 15px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    font-size: 15px;
 }
 
 
@@ -715,6 +719,7 @@ i.fa-linkedin{
     align-items: center;    
     padding-top: 40px;
     padding-bottom: 40px;
+    position: relative;
 }
 
 .cargo-info .lower-section .div2{
@@ -771,6 +776,10 @@ i.fa-linkedin{
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
+}
+
+.boeing2-content{
+    position:relative;
 }
 
 ul{
@@ -944,4 +953,97 @@ ul{
         margin-right: 0px !important;
     }
 }
+
+
+.login-info .upper-section{
+    background-image: url('../images/login.jpeg');
+    background-size: cover;
+    background-position: center center;
+    height:200px;
+}
+
+.login{
+    text-align: center;
+    padding:40px 5%;
+}
+
+.login-form{
+    max-width: 300px;
+    display: inline-block;
+}
+
+.login-form button{
+    margin-top: 20px;
+}
+
+.register-form{
+    max-width: 380px;
+    display: inline-block;
+}
+
+.border1 .line{
+    border-bottom: 2px solid #ab9364;
+    width:50px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.border1 i{
+    font-size: 17px;
+    color:#ab9364;
+    font-weight: bolder;
+}
+
+.register{
+    padding-top: 40px;
+}
+
+.register-form{
+    border: 1px solid #ab9364;
+    padding:40px;
+    text-align: left;
+}
+
+.register-form button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login .heading-block p{
+    padding-top: 0px;
+    margin-bottom: 20px;
+    color:#8d8d8d;
+}
+
+.login .heading-block h1{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.login .heading-block img{
+    max-width: 300px;
+    margin-top: -30px;
+}
+
+
+.weird img{
+    position:absolute;
+    right:50%;
+    left:50%;
+    margin:auto;
+    padding:auto;
+    top:0px;
+}
+
+.weird img.plus{
+    width:40px;
+    margin-left: -20px;
+}
+
+.weird img.vu{
+    width:40%;
+    margin-left: -20%;
+    opacity: 0.5;
+}
+
 
