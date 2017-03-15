@@ -701,12 +701,16 @@ i.fa-linkedin{
 }
 
 .cargo-info .lower-section{
-    display: flex;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex; 
     padding-left:5%;
     padding-right:5%;
     background-color: #162324;
     color:#fff;
     text-align: left;
+     -webkit-justify-content: center; /* Safari 6.1+ */
     justify-content: center;
     align-items: center;    
     padding-top: 40px;
@@ -732,7 +736,11 @@ i.fa-linkedin{
 
 .boeing2-content{
     padding:40px 5%;
-    display: flex;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex; 
+    -webkit-justify-content: center; /* Safari 6.1+ */
     justify-content: center;
     background:#2a373c;
     color:#fff;
