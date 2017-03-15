@@ -937,3 +937,11 @@ ul{
     }
 }
 
+@media (max-width: 515px){
+    .buttons .values{
+        width:100% !important;
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+}
+
