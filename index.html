@@ -18,23 +18,31 @@
     
 </head>
 <body>
-
+<div class="anchors">
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="/keyaviation/#AboutUs" >About Us</a></li>
+        <li><a href="/keyaviation/#Services" >Services</a></li>
+        <li><a href="/keyaviation/#Investors" >Investors</a></li>
+        <li><a href="/keyaviation/#Contact" >Contact</a></li>
+    </ul>
+</div>
 <div class="container">
+    <img src="assets/images/Logotipo.png" class="logo">
     <nav class="uk-navbar" style="text-align: center;">
-        <div style="display: inline-block;">
+        <div style="display: inline-block;" class="main-nav">
             <ul class="uk-navbar-nav">
-                <li><a href="#Home" data-uk-smooth-scroll>Home</a></li>
-                <li><a href="#AboutUs" data-uk-smooth-scroll>About Us</a></li>
-                <li><a href="#Services" data-uk-smooth-scroll>Services</a></li>
-                <li><a href="#Investors" data-uk-smooth-scroll>Investors</a></li>
-                <li><a href="#Contact" data-uk-smooth-scroll>Contact</a></li>
-                <li><a href="login">Log In</a></li>
+                <li class="active"><a href="#Home" data-uk-smooth-scroll><span class="word">HOME</span></a></li>
+                <li><a href="#AboutUs" data-uk-smooth-scroll><span class="word">ABOUT US</span></a></li>
+                <li><a href="#Services" data-uk-smooth-scroll><span class="word">SERVICES</span></a></li>
+                <li><a href="#Investors" data-uk-smooth-scroll><span class="word">INVESTORS</span></a></li>
+                <li><a href="#Contact" data-uk-smooth-scroll><span class="word">CONTACT</span></a></li>
+                <li><a href="login">LOG IN</a></li>
                 
                 <!-- <li class="uk-parent"><a href="">Services</a></li> -->
             </ul>
         </div>
-        <br />
-        <img src="assets/images/Logotipo.png">
+        <a href="#toggler" class="uk-navbar-nav uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
     </nav>
     <div class="social-icons">
         <ul>
@@ -44,6 +52,18 @@
             <li><a href=""><i class="fa fa-instagram"></i></a></li>
             <li><a href=""><i class="fa fa-youtube"></i></a></li>
         </ul>
+    </div>
+    <div id="toggler" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul>
+                <li><a href="#Home" data-uk-smooth-scroll>Home</a></li>
+                <li><a href="#AboutUs" data-uk-smooth-scroll>About Us</a></li>
+                <li><a href="#Services" data-uk-smooth-scroll>Services</a></li>
+                <li><a href="#Investors" data-uk-smooth-scroll>Investors</a></li>
+                <li><a href="#Contact" data-uk-smooth-scroll>Contact</a></li>
+                <li><a href="login">Log In</a></li>
+            </ul>
+        </div>
     </div>
     
 
@@ -67,7 +87,7 @@
                     <img src="assets/images/newslide2.jpg" width="800" height="400">
                     <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade overlay-inside-content uk-flex uk-flex-center uk-flex-middle uk-text-center">
                         <div class="overlay-inside-content">
-                            <h1 style="font-size: 28px;">￼Safe and high performance investments in relatively short term</h1>
+                            <h1 style="font-size: 28px;">Safe and high performance investments in relatively short term</h1>
                         </div>
                     </div>
                     <!-- <div class="another">
@@ -78,7 +98,7 @@
                     <img src="assets/images/newslide3.jpeg" width="800" height="400">
                     <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade overlay-inside-content uk-flex uk-flex-center uk-flex-middle uk-text-center">
                         <div class="overlay-inside-content">
-                            <h1 style="font-size: 28px;">￼Opens the possibilities of buying, maintenance, conversion and leasing an aircraft according to your specific preference and desires.</h1>
+                            <h1 style="font-size: 28px;">Opens the possibilities of buying, maintenance, conversion and leasing an aircraft according to your specific preference and desires.</h1>
 
                         </div>
                     </div>
@@ -118,44 +138,32 @@
         </div>
         <div class="container" style="padding-top:0px; padding-bottom: 40px; padding-left: 5%; padding-right: 5%;">
             <div class="left-block wow fadeInLeft">
-                <p>We specialize in 4 essential services that are:</p>
-                <p style="max-width: 250px; display:inline-block;"><b>Purchase, maintenance, conversion and leasing of airplanes.</b></p>
-                <p>We also offer the market a strong and safe investment opportunity that sets us apart from the competition.</p>
-                <p>The quality and commitment of our staff backs us to offer the world miles and miles of the latest aeronautical trends</p>
-                <p class="heading button-style">Investment Opportunity</p>
-                <span class="underline-up">
-                    <img src="assets/images/border-black.png" style="width:80%; margin-top: -12px; max-width:350px;">
-                </span>
-                <div class="mini-heading-block" style="text-align: center; width:200px; margin-left:30px; font-weight: bolder;">INVESTMENT THE BUYING PROCESS</div>
-                <div>
-                    <div class="left-content">
-                        <ul>
-                            <li>1. Investment Opportunity</li>
-                            <li>2. Dividend Agreement</li>
-                            <li>3. Deposit to the Company</li>
-                            <li>4. Escrow Deposit</li>
-                            <li>5. Airplane title and transportation to the facility</li>
-                            <li>6. Remodeling and Maintenance</li>
-                            <li>7. Sale/Lease</li>
-                            <li>8. Distribution of Profits</li>
-                        </ul>
-                    </div><div 
-                    class="right-content">
-                        The investments will be divided by the risk associated as well as the time period of the investment.
-                        <br />
-                        The turn-around time for this process will vary, depending on the work needed on the aircraft, but should always be within two to six months. This time frame will be establi- shed by a third party company that will measure the investment specifications.
+                <div class="button-container">
+                    <div class="relative-container">
+                        <a href="projects.html">
+                        <button class="new-button" style="background:url('assets/images/button1.png');">INVESTMENT OPPORTUNITY</button></a>
+                        <div class="dropdown-hover">
+                            <ul>
+                                <li><a href="projects.html#lgaviation">LG Aviation</a></li>
+                                <li><a href="projects.html#boeing">Boeing 737-400 HGW</a></li>
+                                <li style="border-bottom:1px solid black;"><a href="projects.html#modification">Aircraft Modification</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <p style="text-align: left;">Once the investment is completed and the return is received, the profits will be deposited to investors or reinvested at their discretion.</p>
-                
-                <div style='padding-top: 20px; cursor: pointer;' data-uk-modal="{target:'#whoIsKeyAviation'}">
-                    <p class="heading button-style" >Who Is Key Aviation</p>
-                    <br />
-                    <img src="assets/images/border3.png" style="max-width: 200px;">
-                </div>
+                <p><b>Key Aviation</b> is a new style and boutique aviation leasing and management company. Whilst our charter of objectives is conventional to the industry, our me- thodology is focused more on the airline and their needs. This makes us more flexible and affords us the ability to perform and transact unique commercial arrangements within this market.</p>
+                <p>Formed in 2014, its founders, having earned the respect of the industry, applied their expertise to develop a specialist aviation consulting and finance company. <b>Key Aviation</b> is in tune with the market - an aircraft leasing and finance company with the ability to offer consulting and fleet management services to aviation companies, governments and airlines, as well as providing these industries with aircraft financing and leasing services.</p>
+                <p><b>Key Aviation</b> was started so its founders could expand their operations and deli- ver the same personal and expert services to a wider audience. Through our ser- vices we advise clients on aircraft transactions, maintenance, and training and provide solid and relevant advice to move our clients towards their goals and greater profits, which in turn drive the acquisition of new aircraft.</p>
+                <p>Now is the perfect time to invest in aircraft as the trend to lease increases, world air traffic increases and as new funding sources are required to be sourced by the industry.<br />What is the difference between us and other companies with the same profile? We own our MRO <b><a href="http://www.stratusmro.com">http://www.stratusmro.com</a></b> with a very large track record and huge added value.</p>
                 <img class="background-round" src="assets/images/bgfaded.png"/>
             </div><div 
             class="right-block wow fadeInRight">
+                <div class="button-container">
+                    <div class="relative-container">
+
+                        <button data-uk-modal="{target:'#whoIsKeyAviation'}" class="new-button" style="background:url('assets/images/button2.png');">WHO IS KEY AVIATION</button>
+                    </div>
+                </div>
                 <div style="position:relative; box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3)">
                     <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
                         <ul class="uk-slideshow uk-overlay-active" data-uk-slideshow>
@@ -202,15 +210,15 @@
                 <p>We distinguish ourselves by the quality that we offer to our clients, that is why we carry a strict process of maintenance. We make sure that each aircraft has the best maintenance service for its optimal operation and the safety of our customers and investors.</p>
             </div>
             <div class="blocks wow fadeInUp" data-wow-delay="0.3s">
-                <h4><i class="fa fa-star"></i>FOR SALE</h4>
-                <p>The purchase of our aircraft is possible at the end of the remodeling process. The quality, comfort, design and technology of our aircraft makes them unique in their kind.<br />Do not forget to subscribe to our newsletter to receive the best pur- chase offers!</p>
+                <h4><i class="fa fa-star"></i>AIRCRAFT SELL & PURCHASE</h4>
+                <p>The purchase of our aircraft is possible at the end of the remodeling process. The quality, comfort, design and technology of our aircraft makes them unique in their kind.<br />Do not forget to subscribe to our newsletter to receive the best purchase offers!</p>
             </div>
             <div class="blocks wow fadeInUp" style="margin-right: 30px;" data-wow-delay="0.6s">
-                <h4><i class="fa fa-refresh"></i>CONVERSION</h4>
-                <p>Our planes go through an exclusive and customized remodeling pro- cess. The interior of our aircrafts is inspired by the latest trends in design and technology, without leaving aside the comfort of passengers.</p>
+                <h4><i class="fa fa-refresh"></i>OVERHAUL</h4>
+                <p>Our planes go through an exclusive and customized remodeling process. The interior of our aircrafts is inspired by the latest trends in design and technology, without leaving aside the comfort of passengers.</p>
             </div>
             <div class="blocks wow fadeInUp" data-wow-delay="0.9s">
-                <h4><i class="fa fa-usd"></i>LEASING</h4>
+                <h4><i class="fa fa-usd"></i>AIRCRAFT LEASING</h4>
                 <p>We have leasing plans to suit you. Wherever you go, do it with style and comfort. Write us your request and we gladly quote you the best personalized leasing service!
                 <br />
                 <br />
@@ -220,27 +228,29 @@
     </div>
 
     <div class="investors wow fadeIn" id="Investors">
-        <div class="heading-block">
+        <div class="heading-block" data-uk-parallax="{bg: '-100'}">
             <h1>INVESTORS</h1>
             <img src="assets/images/stars.png" style="max-width: 80px; margin-top: -10px;">
         </div>
         <div class="container">
             <div class="left-block wow fadeInLeft">
+
+                <div class="button-container">
+                    <div class="relative-container">
+                        <a href="projects.html">
+                        <img src="assets/images/analytics2.png">
+                        <br />
+                        <button class="new-button" style="background:url('assets/images/button3.png');">SUCCESS INVESTMENT PROJECTS</button></a>
+                    </div>
+                </div>
+
+
                 <p>As a leader in alternative asset management, we are a trusted partner to many of the world’s top institutional and individual investors, including retirement systems which represent 29 million pensioners in the United States and millions more internationally. As careful stewards of capital, we strive to provide solutions that create lasting value for our investors, the com- panies in which we invest and society at large.</p>
                 <p>By making companies stronger and better positioned for long-term growth, we can help create good jobs, support local communities and, ultimately, secure the future of millions of people around the world.<br />To access our Limited Partner Portal, BXAccess.</p>
                 <p>“Practicing the art of the long view has enabled us to outperform across the broad spectrum of alternative asset classes for three decades. We are sharply focused on delivering excellent investment performance, being responsible stewards of our inves-tors’ capital, managing risk, seeking out new opportunities, and innovating. “</p>
                 <p><b>OUR PRIORITY</b></p>
                 <p>Everything we do is guided by a set of principles that define our character and culture; they have been at the core of Blackstone since its inception. These enduring qualities are the shared convictions that we bring to our professional and personal conduct – they are a fun- damental strength of our business.</p>
                 <p>Above all, we have made it our No. 1 priority to serve the needs of our investors and clients. This commitment is reflected in a culture that values integrity, professionalism and a pas- sion for excellence. It also leads us to operate with prudence, financial discipline, a long-term perspective, and a clear understanding that trust is something we must earn every day.</p>
-                <a href="projects.html">
-                    <div style="text-align: center;">
-                        <img src="assets/images/increasing.png" style="padding-bottom: 10px;">
-                        <br />
-                        
-                            <p class="heading button-style" style="padding-top: 5px;padding-bottom: 5px;">Investment Projects</p>
-                        
-                    </div>
-                </a>
                 
             </div><div 
             class="right-block">
@@ -267,14 +277,12 @@
             <div class="contact-table wow fadeInUp">
                 <div class="left-side">
                     <!-- <img src=""> -->
-                    <p><b>GENERAL</b></p>
-                    <p class="italic">For office-specific contact information, please visit our offices page.</p>
-                    <p><i class="fa fa-phone"></i>Switchboard: +1 (212) 583-5000</p>
-                    <p><b>EMAIL ALERTS Et INVESTOR RELATIONS</b></p>
-                    <p class="italic">To receive email notifications when press releases or Byron Wien’s Market Commentaries are posted, sign up for email alerts here.<br />For investor relations contact information or to receive email notifications for SEC filings, events, end of day stock quotes, and financial reports, please visit our Investor Relations page.</p>
-                    <p><b>INVESTOR RELATIONS CONTACT INFORMATION</b></p>
-                    <p class="italic"><i class="fa fa-phone"></i>US: +1 888-756-8443<br />International: +1 646-313-6590</p>
-                    <p class="italic" style="word-wrap: break-word;"><i class="fa fa-envelope" style="display: inline;"></i>BlackstonelnvestorRelations@blackstone.com</p>
+                    <div style="text-align: center; padding-bottom: 20px;">
+                        <img src="assets/images/logo-blue.png">
+                    </div>
+                    <p><i class="fa fa-phone"></i>US: +1 310-254-5816</p>
+                    <br />
+                    <p class="italic" style="word-wrap: break-word;"><i class="fa fa-envelope" style="display: inline;"></i>s@zirdok.com</p>
                 </div><div 
                 class="right-side">
                     <form>
@@ -336,9 +344,10 @@
                 <h1>WHO IS KEY AVIATION</h1>
             </div>
             <div class="main-content">
-                <div class="div1">
+                <div class="div1" style="position: relative;">
                     <!-- <img src="assets/images/plus.png"> -->
                     <div class="overlay"></div><p><span class="yellow">Key Aviation’s</span> focus is on purchasing older airplanes, updating them, and then selling these planes for a profit, very similar to the process of flipping real estate. This task provides invest- ment opportunities for those looking for a safe, high yield investment.<br />Key Aviation identifies sellers and buyers of aircraft, as well as investors.</p>
+                    <img class="plus" src="assets/images/plus.png">
                 </div><div 
                 class="div2"><p>
                 <span class="yellow">Key Aviation</span> is based out of San Bernardino, California and will partner with Stratus Aircraft Services, Inc. who will do the upgrades and maintenance work on each aircraft. Stratus Aircraft Services is certified with the Federal Aviation Administration (FAA) under Title 14 of the Code of Federal Regula- tions and specializes in aircraft main- tenance, modification, maintenance support, inspection for commercial, military, regional, business, and trans- port. The company has earned a global reputation for repair quality, dependable turnaround times and competitive pricing.</p>
@@ -365,6 +374,51 @@
     new WOW().init({
         
     });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+        
+        //smoothscroll
+        $('.anchors a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+            
+            $('.anchors a').each(function () {
+                console.log("working"); 
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+          
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+2
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+    });
+
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('.anchors a').each(function () {
+            var currLink = $(this);
+            var asd = currLink.attr("href").replace("/keyaviation/","");
+            console.log(asd);
+            var refElement = $(asd);
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#anchors ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }
+    onScroll();
 </script>
 </body>
 </html>

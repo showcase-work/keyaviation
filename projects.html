@@ -17,24 +17,23 @@
     
 </head>
 <body>
-
 <div class="container projects-container">
+    <img src="assets/images/Logotipo.png" class="logo">
 
     <nav class="uk-navbar" style="text-align: center;">
-        <div style="display: inline-block;">
+        <div style="display: inline-block;" class="main-nav">
             <ul class="uk-navbar-nav">
-                <li><a href="/keyaviation/#Home">Home</a></li>
-                <li><a href="/keyaviation/#AboutUs" >About Us</a></li>
-                <li><a href="/keyaviation/#Services" >Services</a></li>
-                <li><a href="/keyaviation/#Investors" >Investors</a></li>
-                <li><a href="/keyaviation/#Contact" >Contact</a></li>
-                <li><a href="/keyaviation/login">Log In</a></li>
+                <li class="active"><a href="/keyaviation/#Home" data-uk-smooth-scroll><span class="word">HOME</span></a></li>
+                <li><a href="/keyaviation/#AboutUs" data-uk-smooth-scroll><span class="word">ABOUT US</span></a></li>
+                <li><a href="/keyaviation/#Services" data-uk-smooth-scroll><span class="word">SERVICES</span></a></li>
+                <li><a href="/keyaviation/#Investors" data-uk-smooth-scroll><span class="word">INVESTORS</span></a></li>
+                <li><a href="/keyaviation/#Contact" data-uk-smooth-scroll><span class="word">CONTACT</span></a></li>
+                <li><a href="/keyaviation/login">LOG IN</a></li>
                 
                 <!-- <li class="uk-parent"><a href="">Services</a></li> -->
             </ul>
         </div>
-        <br />
-        <img src="assets/images/Logotipo.png">
+        <a href="#toggler" class="uk-navbar-nav uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
     </nav>
     <div class="social-icons">
         <ul>
@@ -45,16 +44,28 @@
             <li><a href=""><i class="fa fa-youtube"></i></a></li>
         </ul>
     </div>
+    <div id="toggler" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul>
+                <li class="active"><a href="/keyaviation/#Home" data-uk-smooth-scroll><span class="word">HOME</span></a></li>
+                <li><a href="/keyaviation/#AboutUs" data-uk-smooth-scroll><span class="word">ABOUT US</span></a></li>
+                <li><a href="/keyaviation/#Services" data-uk-smooth-scroll><span class="word">SERVICES</span></a></li>
+                <li><a href="/keyaviation/#Investors" data-uk-smooth-scroll><span class="word">INVESTORS</span></a></li>
+                <li><a href="/keyaviation/#Contact" data-uk-smooth-scroll><span class="word">CONTACT</span></a></li>
+                <li><a href="/keyaviation/login">LOG IN</a></li>
+            </ul>
+        </div>
+    </div>
 
 
-    <div class="cargo-info" >
+    <div class="cargo-info" id="lgaviation">
         <div class="upper-section">
             <div class="overlay">
                 <h1 style="margin-top:200px;"><i class="yellow fa fa-plane"></i>LG AVIATION, INC - CARGO DIVISION</h1>
             </div>
         </div>
         <div class="lower-section">
-            <div class="div1">
+            <div class="div1 wow fadeInLeft">
                 <h4 class="yellow">MD-80 CARGO FINANCIAL REQUIREMENTS</h4>
                 <ul>
                     <li>1st Aircraft - 6 million USD</li>
@@ -65,10 +76,10 @@
                 <h4 class="yellow">INVESTMENT RETURNS</h4>
                 <p>25% Net profit from every Aircraft<br />STC ownership for future conversions<br />Streamlined process for future conversions.</p>
             </div><div 
-            class="div2">
+            class="div2 wow fadeIn">
                 <img src="assets/images/analytics.png">
             </div><div 
-            class="div2">
+            class="div2 wow fadeInRight">
                 <img src="assets/images/insideplane.png">
             </div>
             <div class="weird">
@@ -78,7 +89,7 @@
 
     </div>
 
-    <div class="boeing">
+    <div class="boeing wow fadeInUp" id=boeing>
         <div style="position:relative; box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3)">
             <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
                 <ul class="uk-slideshow uk-overlay-active" data-uk-slideshow>
@@ -119,8 +130,8 @@
                 </ul>
             </div>
         </div>
-        <div class="boeing2-content">
-            <div class="left-block">
+        <div class="boeing2-content wow fadeInUp">
+            <div class="left-block wow fadeInLeft">
                 <h4 class="yellow">WHAT WE NEED</h4>
                 <ul>
                     <li>Serviceable Engines – type CFM56-3C1</li>
@@ -136,7 +147,7 @@
                     <img class="vu" src="assets/images/v.png">
                 </div>
             </div><div
-            class="right-block">
+            class="right-block wow fadeInRight">
                 <h4 class="yellow">INVESTMENT AND RETURN</h4>
                 <ul>
                     <li>Aircraft Cost of - 1.1 million USD (Paid)</li>
@@ -155,7 +166,7 @@
 
 
 
-    <div class="boeing">
+    <div class="boeing wow fadeInUp" id="modification">
         <div style="position:relative; box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3)">
             <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
                 <ul class="uk-slideshow uk-overlay-active" data-uk-slideshow>
@@ -196,8 +207,8 @@
                 </ul>
             </div>
         </div>
-        <div class="boeing2-content content2">
-            <div class="left-block">
+        <div class="boeing2-content content2 wow fadeInUp">
+            <div class="left-block wow fadeInLeft">
                 <h4 class="yellow">FINANCIAL REQUIREMENTS</h4>
                 <ul>
                     <li>Aircraft purchase – 2 million USD</li>
@@ -210,7 +221,7 @@
                     <img class="vu" src="assets/images/u.png">
                 </div>
             </div><div
-            class="right-block">
+            class="right-block wow fadeInRight">
                 <h4 class="yellow">INVESTMENT AND RETURN</h4>
                 <ul>
                     <li style="margin-bottom:10px;">Market value price – after modification – 9 million USD Gross expected profit:</li>

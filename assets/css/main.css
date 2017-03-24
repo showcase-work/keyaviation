@@ -51,9 +51,24 @@ body, html{
     border-bottom:2px solid #FFE0A7;
 }
 
+
 .uk-navbar-nav>li>a{
     color:white;
     background-color: transparent;
+    border-right: 1px solid #FCEE21;
+    border-left: 1px solid #FCEE21;
+}
+
+.uk-navbar-nav>li:first-child>a{
+    border-left:none;
+}
+
+.uk-navbar-nav>li.active a{
+    color:#FCEE21;
+}
+
+.uk-navbar-nav>li:last-child>a{
+    border-right: none;
 }
 /**/
 
@@ -86,6 +101,8 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
 
 .uk-navbar-nav{
     background-color: rgba(0,0,0,0.4);
+    color:white;
+    display: flex;
 }
 
 .services{
@@ -119,8 +136,12 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
 
 }
 
-.uk-navbar img{
+img.logo{
     width:150px;
+    position: absolute;
+    left:20px;
+    top:20px;
+    z-index: 100;
 }
 
 .overlay-inside-content h1{
@@ -249,7 +270,9 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     position: relative;
     max-width: 490px;
     padding:10px;
-    padding-right: 40px;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: left;
 }
 
 .about-us .right-block{
@@ -396,6 +419,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     vertical-align: top;
     padding:5%;
     text-align: left;
+    border-left: 1px solid #ab9364;
 }
 
 .contact-table .left-side{
@@ -404,7 +428,7 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul{
     vertical-align: top;
     padding:5%;
     text-align: left;
-    border-right: 1px solid #ab9364;
+    
 }
 
 .italic{
@@ -623,6 +647,7 @@ input:focus, textarea:focus {
     right:0px;
     margin-right: 10px;
     z-index:100000;
+    display: none;
 }
 
 .social-icons li{
@@ -874,6 +899,7 @@ ul{
 
     .contact-table .right-side{
         width:100%;
+        border-left:none;
     }
 
     #whoIsKeyAviation .main-content .div1{
@@ -950,6 +976,22 @@ ul{
     #whoIsKeyAviation .main-content p{
 
     }
+
+    .uk-navbar-toggle{
+        display: block;
+    }
+
+    .main-nav{
+        display: none !important;
+    }
+
+    .uk-navbar-nav{
+        background:transparent !important;
+    }
+
+    .anchors{
+        display: none !important;
+    }
 }
 
 @media (max-width: 515px){
@@ -958,6 +1000,11 @@ ul{
         margin-left: 0px;
         margin-right: 0px !important;
     }
+}
+
+.uk-navbar-toggle{
+    float:right;
+    margin-right: 20px;
 }
 
 
@@ -1050,6 +1097,123 @@ ul{
     width:40%;
     margin-left: -20%;
     opacity: 0.5;
+}
+
+.uk-navbar-nav li.active .word,
+.uk-navbar-nav>li.uk-open>a, .uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a:focus{
+    color: #FCEE21 !important;
+    background-color: transparent !important;
+}
+
+
+.button-container{
+    text-align: center;
+}
+
+.button-container .dropdown-hover{
+    display: block;
+    position:absolute;
+    top:-28px;
+    right:-170px;
+    z-index: 1000;
+    display: none;
+}
+
+.button-container .dropdown-hover ul li{
+    display: block;
+    border:1px solid black;
+    padding:5px;
+    border-bottom: none;
+    width:160px;
+    background-color:white;
+    cursor: pointer;
+}
+
+.button-container button{
+    background-size: cover !important;
+    background-position: center center !important;
+    padding:10px;
+    border:none;
+    color:white;
+    margin-bottom:30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.57);
+    font-size: 16px;
+}
+
+.button-container .relative-container{
+    display: inline-block;
+    position: relative;
+}
+
+.button-container:hover .dropdown-hover{
+    display: block !important;
+}
+
+#whoIsKeyAviation .plus{
+    position: absolute;
+    right:0px;
+    top:0px;
+    width:40px;
+    margin-right: -20px;
+}
+
+.investors .button-container img{
+    display: inline-block;
+    width:60px;
+}
+
+
+.anchors{
+    text-align: left;
+    position:fixed;
+    right:10px;
+    top:50%;
+    margin-top: -100px;
+    display: inline-block;
+    z-index: 200000;
+    color:black;
+    padding:20px;
+    padding-left: 30px;
+    background-color: rgba(255,255,255,0.4);
+    width:120px;
+}
+
+.anchors ul li{
+    display: inline-block;
+} 
+
+.anchors a{
+    color:black;
+}
+
+.anchors a.active{
+    color:#FCEE21;
+    font-weight: bolder;
+}
+
+.register-form{
+    display: none;
+}
+
+i.add{
+    cursor: pointer;
+}
+
+.uk-offcanvas-bar{
+    padding-top: 80px;
+}
+
+.uk-offcanvas-bar ul li a{
+    padding:15px 20px;
+    color:white;
+    font-size: 15px;
+    display: block;
+    border-bottom:1px solid white;
+}
+
+.uk-offcanvas-bar ul li a:hover{
+    color:#FCEE21;
 }
 
 

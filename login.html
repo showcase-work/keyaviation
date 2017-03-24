@@ -20,23 +20,25 @@
 <body>
 
 <div class="container projects-container">
+    <img src="assets/images/Logotipo.png" class="logo">
+    
 
     <nav class="uk-navbar" style="text-align: center;">
-        <div style="display: inline-block;">
+        <div style="display: inline-block;" class="main-nav">
             <ul class="uk-navbar-nav">
-                <li><a href="/keyaviation/#Home">Home</a></li>
-                <li><a href="/keyaviation/#AboutUs" >About Us</a></li>
-                <li><a href="/keyaviation/#Services" >Services</a></li>
-                <li><a href="/keyaviation/#Investors" >Investors</a></li>
-                <li><a href="/keyaviation/#Contact" >Contact</a></li>
-                <li><a href="#">Log In</a></li>
+                <li class="active"><a href="/keyaviation/#Home" data-uk-smooth-scroll><span class="word">HOME</span></a></li>
+                <li><a href="/keyaviation/#AboutUs" data-uk-smooth-scroll><span class="word">ABOUT US</span></a></li>
+                <li><a href="/keyaviation/#Services" data-uk-smooth-scroll><span class="word">SERVICES</span></a></li>
+                <li><a href="/keyaviation/#Investors" data-uk-smooth-scroll><span class="word">INVESTORS</span></a></li>
+                <li><a href="/keyaviation/#Contact" data-uk-smooth-scroll><span class="word">CONTACT</span></a></li>
+                <li><a href="/keyaviation/login">LOG IN</a></li>
                 
                 <!-- <li class="uk-parent"><a href="">Services</a></li> -->
             </ul>
         </div>
-        <br />
-        <img src="assets/images/Logotipo.png">
+        <a href="#toggler" class="uk-navbar-nav uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
     </nav>
+
     <div class="social-icons">
         <ul>
             <li><a href=""><i class="fa fa-twitter"></i></a></li>
@@ -45,6 +47,18 @@
             <li><a href=""><i class="fa fa-instagram"></i></a></li>
             <li><a href=""><i class="fa fa-youtube"></i></a></li>
         </ul>
+    </div>
+    <div id="toggler" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul>
+                <li class="active"><a href="/keyaviation/#Home" data-uk-smooth-scroll><span class="word">HOME</span></a></li>
+                <li><a href="/keyaviation/#AboutUs" data-uk-smooth-scroll><span class="word">ABOUT US</span></a></li>
+                <li><a href="/keyaviation/#Services" data-uk-smooth-scroll><span class="word">SERVICES</span></a></li>
+                <li><a href="/keyaviation/#Investors" data-uk-smooth-scroll><span class="word">INVESTORS</span></a></li>
+                <li><a href="/keyaviation/#Contact" data-uk-smooth-scroll><span class="word">CONTACT</span></a></li>
+                <li><a href="/keyaviation/login">LOG IN</a></li>
+            </ul>
+        </div>
     </div>
 
 
@@ -57,7 +71,7 @@
 
     <div class="login">
         <div class="heading-block">
-            <h1>INVESTOR PORTAL</h1>
+            <h1>INVESTORS SECURE SIGN IN</h1>
             <img src="assets/images/border-golden.png">
             <p>LOG IN TO EXPLORE INVESTMENT OPPORTUNITIES</p>
         </div>
@@ -72,9 +86,10 @@
             <p><b>New User Please Register</b></p>
             <div class="border1">
                 <div class="line"></div>
-                <i class="fa fa-pencil-square-o"></i>
+                <i class="fa fa-pencil-square-o add"></i>
                 <div class="line"></div>
             </div>
+            <div style="display: inline-block;">
             <div class="register-form">
                 <form>
                     <label>Username</label>
@@ -89,6 +104,7 @@
                     
 
                 </form>
+            </div>
             </div>
         </div>
     </div>
@@ -116,6 +132,12 @@
     new WOW().init({
         
     });
+</script>
+<script type="text/javascript">
+    $(".add").click(function(){
+        console.log("ajsdfjksdf");
+        $(".register-form").slideDown();
+    })
 </script>
 </body>
 </html>
